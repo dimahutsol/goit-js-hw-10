@@ -1,0 +1,102 @@
+@import url('./reset.css');
+
+.button-custom {
+  background-color: grey;
+  color: gold;
+  border-radius: 15px;
+  border: 3px solid gold;
+  padding: 16px 24px;
+  font-size: 24px;
+  margin: 30px;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+
+.timer-wrapper {
+  margin-left: 30px;
+}
+
+.timer-top {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.timer-input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+  color: #2e2f42;
+  font-size: 16px;
+  line-height: 1.5;
+  min-width: 272px;
+  transition: border-color 250ms linear;
+  transition: color 250ms linear;
+}
+
+.timer-input:hover,
+.timer-input:focus {
+  border: 1px solid #000;
+}
+
+.timer-input:active {
+  border: 1px solid #4e75ff;
+  color: #000;
+}
+
+.timer-input:disabled {
+  border: 1px solid #808080;
+  color: #808080;
+  cursor: not-allowed;
+}
+
+.timer-button {
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: none;
+  background-color: #4e75ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+}
+
+.timer-button:hover,
+.timer-button:focus {
+  background-color: #6c8cff;
+}
+
+.timer-button:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  color: #2e2f42;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 1.6px;
+}
+
+.label {
+  color: #2e2f42;
+  font-size: 16px;
+  line-height: 1.5;
+}
