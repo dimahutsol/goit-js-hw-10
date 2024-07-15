@@ -11,6 +11,39 @@
       <button class="button-custom">&#9787; Go back &#9787;</button>
     </a>
 
+    <form class="form">
+      <label class="form-delay-label">
+        Delay (ms)
+        <input class="form-delay-input" type="number" name="delay" required />
+      </label>
+
+      <fieldset class="form-fieldset">
+        <legend class="form-legend">State</legend>
+        <label class="form-fieldset-label">
+          <input
+            class="form-fieldset-radio"
+            type="radio"
+            name="state"
+            value="fulfilled"
+            required
+          />
+          Fulfilled
+        </label>
+        <label class="form-fieldset-label">
+          <input
+            class="form-fieldset-radio"
+            type="radio"
+            name="state"
+            value="rejected"
+            required
+          />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button class="form-button" type="submit">Create notification</button>
+    </form>
+
     <script type="module" src="./js/2-snackbar.js"></script>
   </body>
 </html>
